@@ -4,93 +4,85 @@ Algorithm you should know for preparing system design interview. For example, Le
 
 
 #### How to contribute
-The algorithm and its resources should:
+算法及其资源应该:
 
-1. Can answer a system design question. For instance, [Building a complete Tweet index](https://blog.twitter.com/engineering/en_us/a/2014/building-a-complete-tweet-index.html) can answer "How to implement Twitter search" or "How to implement hashtag in Twitter".
-2. Free to read or watch.
-3. Text would be better than videos.
+1.可以回答系统设计问题。例如，构建完整的推文索引可以回答“如何实现 Twitter 搜索”或“如何在 Twitter 中实现 hashtag”。
+2.免费阅读或观看。
+3.文字会比视频更好。
 
-#### Requirements
-- Know when to use ☑️
-- Know how it works ✅
 
-#### Table of contents
+#### 目录
 
-- Bloom filter ✅
-- Frugal Streaming ☑️
-- Geohash / S2 Geometry ☑️
-- HyperLogLog ✅
-- Leaky bucket / Token bucket ✅
-- Lossy Counting ☑️
-- Operational transformation ☑️
-- Quadtree / Rtree ☑️
-- Ray casting ☑️
-- Reverse index ✅
-- Rsync algorithm ✅
-- Trie algorithm ✅
+- 布隆过滤器✅
+- Geohash / S2 Geometry☑️
+- 超级日志✅
+- Leaky bucket / Token bucket✅
+- 有损计数☑️
+- 运营转型☑️
+- 四叉树/Rtree☑️
+- 射线投射☑️
+- 反向索引✅
+- 同步算法✅
+- Trie算法✅
 
-### Bloom filter
-A Bloom filter is a data structure designed to tell you, rapidly and memory-efficiently, whether an element is present in a set.
+### 布隆过滤器
+布隆过滤器是一种数据结构，旨在快速且高效地告诉您某个元素是否存在于集合中。
 
 - [Build a Web Crawler](http://blog.gainlo.co/index.php/2016/06/29/build-web-crawler/)
 
-### Frugal Streaming
-Frugal Streaming uses only one unit of memory per group to compute a quantile for each group
-
-- [Find the nth percentile of the data stream](https://research.neustar.biz/2013/09/16/sketch-of-the-day-frugal-streaming/)
 
 ### Geohash / S2 Geometry
-Geohash can used by 1) dating apps to find romantic matches within a particular cell, and to create chat apps.2) Find nearby locations, and identify places of interest, restaurants, shops and accommodation establishments in an area. 3) Geohashers go on global expeditions to meet people and explore new places.
+Geohash 可用于 1) 约会应用程序在特定小区内寻找浪漫对象，并创建聊天应用程序。2) 查找附近位置，并识别一个区域内的名胜古迹、餐馆、商店和住宿场所。3) Geohasher 进行全球探险，结识新朋友并探索新地方。
 
 - [Location-based search results with DynamoDB and Geohash](https://read.acloud.guru/location-based-search-results-with-dynamodb-and-geohash-267727e5d54f)
 
-### HyperLogLog
-HyperLogLog is an algorithm for the count-distinct problem, approximating the number of distinct elements in a multiset.
+### 超级日志
+HyperLogLog 是一种用于计数不同问题的算法，它近似于多重集中不同元素的数量。
 
 - [Redis HyperLogLog Explained](https://www.youtube.com/watch?v=MunL8nnwscQ)
 
 ### Leaky bucket / Token bucket
-A mechanism to control the amount and the rate of the traffic sent to the network
+一种控制发送到网络的流量的数量和速率的机制
 
 - [Everything You Need To Know About API Rate Limiting](https://nordicapis.com/everything-you-need-to-know-about-api-rate-limiting/)
 - [How to Design a Scalable Rate Limiting Algorithm](https://konghq.com/blog/how-to-design-a-scalable-rate-limiting-algorithm/)
 
-### Lossy Counting
-The lossy count algorithm is an algorithm to identify elements in a data stream whose frequency count exceed a user-given threshold.
+### 有损计数
+有损计数算法是一种用于识别数据流中频率计数超过用户给定阈值的元素的算法。
 
 - [Fast and Reliable Ranking in Datastore](https://cloud.google.com/datastore/docs/articles/fast-and-reliable-ranking-in-datastore)
 - [Frequency Counts over Data Streams](https://www.cse.ust.hk/vldb2002/VLDB2002-proceedings/slides/S10P03slides.pdf)
 - [How we built rate limiting capable of scaling to millions of domains](https://blog.cloudflare.com/counting-things-a-lot-of-different-things/)
 - [Rate-limiting strategies and techniques](https://cloud.google.com/solutions/rate-limiting-strategies-techniques)
 
-### Operational transformation
-Operational transformation (OT) is a technology for supporting a range of collaboration functionalities in advanced collaborative software systems.
+### 运营转型
+运营转型 (OT) 是一种支持高级协作软件系统中的一系列协作功能的技术。
 
 - [How Google docs handle editing collisions](https://stackoverflow.com/a/36366174)
 - [Collaborative editing](https://www3.ntu.edu.sg/home/czsun/projects/otfaq/#_Toc321146127)
 
-### Quadtree / Rtree
+### 四叉树/Rtree
 - [Spatial Indexing with Quadtrees](https://medium.com/@waleoyediran/spatial-indexing-with-quadtrees-b998ae49336)
 - Find nearby interest points
 
-### Ray casting
-Ray casting is the most basic of many computer graphics rendering algorithms that use the geometric algorithm of ray tracing. Given a point with longitude and latitude, return the Country of the point.
+### 射线投射
+光线投射是许多使用光线追踪几何算法的计算机图形渲染算法中最基本的一种。给定一个具有经度和纬度的点，返回该点的国家。
 
 - [Ray Casting Algorithm](http://philliplemons.com/posts/ray-casting-algorithm)
 
-### Reverse index
-Reverse Index: a reverse index is an index of keywords which stores records of documents that contain the keywords in the list.
+### 反向索引
+反向索引：反向索引是关键字的索引，它存储包含列表中的关键字的文档的记录。
 
 - [How search engines work: Crawling, Indexing, And Ranking](https://moz.com/beginners-guide-to-seo/how-search-engines-operate)
 - [Building a complete Tweet index](https://blog.twitter.com/engineering/en_us/a/2014/building-a-complete-tweet-index.html)
 
-### Rsync algorithm
-The rsync algorithm is a technique for reducing the cost of a file transfer by avoiding the transfer of blocks that are already at the destination.
+### 同步算法
+rsync 算法是一种通过避免传输已经在目的地的块来降低文件传输成本的技术。
 
 - [Streaming File Synchronization](https://dropbox.tech/infrastructure/streaming-file-synchronization)
 
-### Trie algorithm
-Trie is an efficient information reTrieval data structure. Using Trie, search complexities can be brought to optimal limit (key length)
+### Trie算法
+Trie 是一种高效的信息检索数据结构。使用 Trie，搜索复杂性可以达到最佳限制（密钥长度）
 
 - [How to Design an Autocomplete System](https://dzone.com/articles/how-to-design-a-autocomplete-system)
 - [Spell Checkers](https://stackoverflow.com/questions/21366631/how-do-i-use-a-trie-for-spell-checking)
