@@ -1,4 +1,4 @@
-# System design algorithms
+# 系统设计算法
 
 Algorithm you should know for preparing system design interview. For example, Learn Geohash / S2 Geometry algorithm for "How to design Uber like system?"
 
